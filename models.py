@@ -26,7 +26,6 @@ class CartItems(models.Model):
 	on_sale = models.BooleanField(default=False)
 	collection = models.CharField(max_length=200)
 	category = models.CharField(max_length=200)
-
 	variation = models.CharField(max_length=200, blank=True)
     variation_price = models.DecimalField(max_digits=5, decimal_places=2, 
     	blank=True)
